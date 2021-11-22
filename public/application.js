@@ -148,7 +148,7 @@ function onGooglePaymentButtonClicked() {
  */
 function processPayment(paymentData) {
   // show returned data in developer console for debugging
-    console.log(paymentData);
   // @todo pass payment token to your gateway to process payment
   paymentToken = paymentData.paymentMethodData.tokenizationData.token;
+  console.log(paymentToken)
 }
