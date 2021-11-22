@@ -9,7 +9,7 @@ const tokenizationSpecification = {
   type: 'PAYMENT_GATEWAY',
   parameters: {
     'gateway': 'spreedly',
-    'gatewayMerchantId': 'exampleGatewayMerchantId'
+      'gatewayMerchantId': '5zF4Q2oD7ZAj7b9NOMT8CN84NUr' // the key value of one spreedly environment
   }
 };
 
@@ -62,7 +62,7 @@ function getGooglePaymentDataRequest() {
   paymentDataRequest.allowedPaymentMethods = [cardPaymentMethod];
   paymentDataRequest.transactionInfo = getGoogleTransactionInfo();
   paymentDataRequest.merchantInfo = {
-    merchantId: '12345678901234567890',
+    merchantId: '5zF4Q2oD7ZAj7b9NOMT8CN84NUr', // the key value of one spreedly environment
     merchantName: 'Endava Store'
   };
   return paymentDataRequest;
